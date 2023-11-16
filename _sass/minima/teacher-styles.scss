@@ -3,10 +3,12 @@
 @mixin button {
     width: auto;
     height: auto;
-    border-radius: 10px;
-    background-color: #21807c;
-    border: 3px solid black;
-    font-size: 1.5em;
+    border-radius: 5px;
+    color: rgb(10,102,194);
+    background-color: white;
+    border: 1px solid rgb(10,102,194);
+    font-weight: bold;
+    cursor: pointer;
 
     display: flex;
     justify-content: center;
@@ -16,8 +18,12 @@
     grid-row: span 1;
 
     // Creates smooth animation effect
-    transition: all 0.5s; 
+    transition: background-color 0.15s; 
   }
+
+
+
+
 
   /* define class for redifined button */
   .button {
@@ -27,6 +33,7 @@
    /* darkens the background color on hover to create a selecting effect */
   .button:hover {
     background-color: #373737;
+    border-width: 2px;
   }
 
   /* "row style" is flexible size and aligns pictures in center */
