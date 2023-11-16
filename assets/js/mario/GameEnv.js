@@ -10,6 +10,8 @@ export class GameEnv {
     static prevBottom;
     static gameSpeed;
     static gravity;
+    static currentLevel;
+    static player;
 
     static isInverted = true;
     static defaultFilter = getComputedStyle(document.documentElement).getPropertyValue('--default-canvas-filter');
